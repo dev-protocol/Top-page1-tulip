@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Top Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <section class="main-top-sec">
+        <div id="particles-js"></div>
+        <script>
+            var pJS = function(tag_id, params){
+
+var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
+
+/* particles.js variables with default values */
+this.pJS = {
+  canvas: {
+    el: canvas_el,
+    w: canvas_el.offsetWidth,
+    h: canvas_el.offsetHeight
+  },
+  particles: {
+    number: {
+      value: 400,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: '#fff'
+    },
+    shape: {
+      type: 'circle',
+      stroke: {
+        width: 0,
+        color: '#ff0000'
+      },
+      polygon: {
+        nb_sides: 5
+      },
+      image: {
+        src: '',
+        width: 100,
+        height: 100
+      }
+    },
+    opacity: {
+      value: 1,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 2,
+        opacity_min: 0,
+        sync: false
+      }
+    },
+    size: {
+      value: 20,
+      random: false,
+      anim: {
+        enable: false,
+        speed: 20,
+        size_min: 0,
+        sync: false
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 100,
+      color: '#fff',
+      opacity: 1,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: 'none',
+      random: false,
+      straight: false,
+      out_mode: 'out',
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 3000,
+        rotateY: 3000
+      }
+    },
+    array: []
+  },
+  interactivity: {
+    detect_on: 'canvas',
+    events: {
+      onhover: {
+        enable: true,
+        mode: 'grab'
+      },
+      onclick: {
+        enable: true,
+        mode: 'push'
+      },
+      resize: true
+    },
+    modes: {
+      grab:{
+        distance: 100,
+        line_linked:{
+          opacity: 1
+        }
+      },
+      bubble:{
+        distance: 200,
+        size: 80,
+        duration: 0.4
+      },
+      repulse:{
+        distance: 200,
+        duration: 0.4
+      },
+      push:{
+        particles_nb: 4
+      },
+      remove:{
+        particles_nb: 2
+      }
+    },
+    mouse:{}
+  },
+  retina_detect: false,
+  fn: {
+    interact: {},
+    modes: {},
+    vendors:{}
+  },
+  tmp: {}
+};
+
+var pJS = this.pJS;
+
+/* params settings */
+if(params){
+  Object.deepExtend(pJS, params);
+}
+
+pJS.tmp.obj = {
+  size_value: pJS.particles.size.value,
+  size_anim_speed: pJS.particles.size.anim.speed,
+  move_speed: pJS.particles.move.speed,
+  line_linked_distance: pJS.particles.line_linked.distance,
+  line_linked_width: pJS.particles.line_linked.width,
+  mode_grab_distance: pJS.interactivity.modes.grab.distance,
+  mode_bubble_distance: pJS.interactivity.modes.bubble.distance,
+  mode_bubble_size: pJS.interactivity.modes.bubble.size,
+  mode_repulse_distance: pJS.interactivity.modes.repulse.distance
+};
+
+
+pJS.fn.retinaInit = function(){
+
+  if(pJS.retina_detect && window.devicePixelRatio > 1){
+    pJS.canvas.pxratio = window.devicePixelRatio; 
+    pJS.tmp.retina = true;
+  } 
+  else{
+    pJS.canvas.pxratio = 1;
+    pJS.tmp.retina = false;
+  }
+
+  pJS.canvas.w = pJS.canvas.el.offsetWidth * pJS.canvas.pxratio;
+  pJS.canvas.h = pJS.canvas.el.offsetHeight * pJS.canvas.pxratio;
+
+  pJS.particles.size.value = pJS.tmp.obj.size_value * pJS.canvas.pxratio;
+  pJS.particles.size.anim.speed = pJS.tmp.obj.size_anim_speed * pJS.canvas.pxratio;
+  pJS.particles.move.speed = pJS.tmp.obj.move_speed * pJS.canvas.pxratio;
+  pJS.particles.line_linked.distance = pJS.tmp.obj.line_linked_distance * pJS.canvas.pxratio;
+  pJS.interactivity.modes.grab.distance = pJS.tmp.obj.mode_grab_distance * pJS.canvas.pxratio;
+  pJS.interactivity.modes.bubble.distance = pJS.tmp.obj.mode_bubble_distance * pJS.canvas.pxratio;
+  pJS.particles.line_linked.width = pJS.tmp.obj.line_linked_width * pJS.canvas.pxratio;
+  pJS.interactivity.modes.bubble.size = pJS.tmp.obj.mode_bubble_size * pJS.canvas.pxratio;
+  pJS.interactivity.modes.repulse.distance = pJS.tmp.obj.mode_repulse_distance * pJS.canvas.pxratio;
+
+};
+
+
+
+/* ---------- pJS functions - canvas ------------ */
+
+pJS.fn.canvasInit = function(){
+  pJS.canvas.ctx = pJS.canvas.el.getContext('2d');
+};
+
+pJS.fn.canvasSize = function(){
+
+  pJS.canvas.el.width = pJS.canvas.w;
+  pJS.canvas.el.height = pJS.canvas.h;
+
+  if(pJS && pJS.interactivity.events.resize){
+
+    window.addEventListener('resize', function(){
+
+        pJS.canvas.w = pJS.canvas.el.offsetWidth;
+        pJS.canvas.h = pJS.canvas.el.offsetHeight;
+
+        /* resize canvas */
+        if(pJS.tmp.retina){
+          pJS.canvas.w *= pJS.canvas.pxratio;
+          pJS.canvas.h *= pJS.canvas.pxratio;
+        }
+
+        pJS.canvas.el.width = pJS.canvas.w;
+        pJS.canvas.el.height = pJS.canvas.h;
+
+        /* repaint canvas on anim disabled */
+        if(!pJS.particles.move.enable){
+          pJS.fn.particlesEmpty();
+          pJS.fn.particlesCreate();
+          pJS.fn.particlesDraw();
+          pJS.fn.vendors.densityAutoParticles();
+        }
+
+      /* density particles enabled */
+      pJS.fn.vendors.densityAutoParticles();
+
+    });
+
+  }
+
+};
+
+
+pJS.fn.canvasPaint = function(){
+  pJS.canvas.ctx.fillRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+};
+
+pJS.fn.canvasClear = function(){
+  pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+};
+
+
+/* --------- pJS functions - particles ----------- */
+
+pJS.fn.particle = function(color, opacity, position){
+
+  /* size */
+  this.radius = (pJS.particles.size.random ? Math.random() : 1) * pJS.particles.size.value;
+  if(pJS.particles.size.anim.enable){
+    this.size_status = false;
+    this.vs = pJS.particles.size.anim.speed / 100;
+    if(!pJS.particles.size.anim.sync){
+      this.vs = this.vs * Math.random();
+    }
+  }
+
+  /* position */
+  this.x = position ? position.x : Math.random() * pJS.canvas.w;
+  this.y = position ? position.y : Math.random() * pJS.canvas.h;
+
+  /* check position  - into the canvas */
+  if(this.x > pJS.canvas.w - this.radius*2) this.x = this.x - this.radius;
+  else if(this.x < this.radius*2) this.x = this.x + this.radius;
+  if(this.y > pJS.canvas.h - this.radius*2) this.y = this.y - this.radius;
+  else if(this.y < this.radius*2) this.y = this.y + this.radius;
+
+  /* check position - avoid overlap */
+  if(pJS.particles.move.bounce){
+    pJS.fn.vendors.checkOverlap(this, position);
+  }
+
+  /* color */
+  this.color = {};
+  if(typeof(color.value) == 'object'){
+
+    if(color.value instanceof Array){
+      var color_selected = color.value[Math.floor(Math.random() * pJS.particles.color.value.length)];
+      this.color.rgb = hexToRgb(color_selected);
+    }else{
+      if(color.value.r != undefined && color.value.g != undefined && color.value.b != undefined){
+        this.color.rgb = {
+          r: color.value.r,
+          g: color.value.g,
+          b: color.value.b
+        }
+      }
+      if(color.value.h != undefined && color.value.s != undefined && color.value.l != undefined){
+        this.color.hsl = {
+          h: color.value.h,
+          s: color.value.s,
+          l: color.value.l
+        }
+      }
+    }
+
+  }
+  else if(color.value == 'random'){
+    this.color.rgb = {
+      r: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
+      g: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
+      b: (Math.floor(Math.random() * (255 - 0 + 1)) + 0)
+    }
+  }
+  else if(typeof(color.value) == 'string'){
+    this.color = color;
+    this.color.rgb = hexToRgb(this.color.value);
+  }
+
+  /* opacity */
+  this.opacity = (pJS.particles.opacity.random ? Math.random() : 1) * pJS.particles.opacity.value;
+  if(pJS.particles.opacity.anim.enable){
+    this.opacity_status = false;
+    this.vo = pJS.particles.opacity.anim.speed / 100;
+    if(!pJS.particles.opacity.anim.sync){
+      this.vo = this.vo * Math.random();
+    }
+  }
+
+  /* animation - velocity for speed */
+  var velbase = {}
+  switch(pJS.particles.move.direction){
+    case 'top':
+      velbase = { x:0, y:-1 };
+    break;
+    case 'top-right':
+      velbase = { x:0.5, y:-0.5 };
+    break;
+    case 'right':
+      velbase = { x:1, y:-0 };
+    break;
+    case 'bottom-right':
+      velbase = { x:0.5, y:0.5 };
+    break;
+    case 'bottom':
+      velbase = { x:0, y:1 };
+    break;
+    case 'bottom-left':
+      velbase = { x:-0.5, y:1 };
+    break;
+    case 'left':
+      velbase = { x:-1, y:0 };
+    break;
+    case 'top-left':
+      velbase = { x:-0.5, y:-0.5 };
+    break;
+    default:
+      velbase = { x:0, y:0 };
+    break;
+  }
+
+  if(pJS.particles.move.straight){
+    this.vx = velbase.x;
+    this.vy = velbase.y;
+    if(pJS.particles.move.random){
+      this.vx = this.vx * (Math.random());
+      this.vy = this.vy * (Math.random());
+    }
+  }else{
+    this.vx = velbase.x + Math.random()-0.5;
+    this.vy = velbase.y + Math.random()-0.5;
+  }
+
+  // var theta = 2.0 * Math.PI * Math.random();
+  // this.vx = Math.cos(theta);
+  // this.vy = Math.sin(theta);
+
+  this.vx_i = this.vx;
+  this.vy_i = this.vy;
+
+  
+
+  /* if shape is image */
+
+  var shape_type = pJS.particles.shape.type;
+  if(typeof(shape_type) == 'object'){
+    if(shape_type instanceof Array){
+      var shape_selected = shape_type[Math.floor(Math.random() * shape_type.length)];
+      this.shape = shape_selected;
+    }
+  }else{
+    this.shape = shape_type;
+  }
+
+  if(this.shape == 'image'){
+    var sh = pJS.particles.shape;
+    this.img = {
+      src: sh.image.src,
+      ratio: sh.image.width / sh.image.height
+    }
+    if(!this.img.ratio) this.img.ratio = 1;
+    if(pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg != undefined){
+      pJS.fn.vendors.createSvgImg(this);
+      if(pJS.tmp.pushing){
+        this.img.loaded = false;
+      }
+    }
+  }
+
+  
+
+};
+
+
+pJS.fn.particle.prototype.draw = function() {
+
+  var p = this;
+
+  if(p.radius_bubble != undefined){
+    var radius = p.radius_bubble; 
+  }else{
+    var radius = p.radius;
+  }
+
+  if(p.opacity_bubble != undefined){
+    var opacity = p.opacity_bubble;
+  }else{
+    var opacity = p.opacity;
+  }
+
+  if(p.color.rgb){
+    var color_value = 'rgba('+p.color.rgb.r+','+p.color.rgb.g+','+p.color.rgb.b+','+opacity+')';
+  }else{
+    var color_value = 'hsla('+p.color.hsl.h+','+p.color.hsl.s+'%,'+p.color.hsl.l+'%,'+opacity+')';
+  }
+
+  pJS.canvas.ctx.fillStyle = color_value;
+  pJS.canvas.ctx.beginPath();
+
+  switch(p.shape){
+
+    case 'circle':
+      pJS.canvas.ctx.arc(p.x, p.y, radius, 0, Math.PI * 2, false);
+    break;
+
+    case 'edge':
+      pJS.canvas.ctx.rect(p.x-radius, p.y-radius, radius*2, radius*2);
+    break;
+
+    case 'triangle':
+      pJS.fn.vendors.drawShape(pJS.canvas.ctx, p.x-radius, p.y+radius / 1.66, radius*2, 3, 2);
+    break;
+
+    case 'polygon':
+      pJS.fn.vendors.drawShape(
+        pJS.canvas.ctx,
+        p.x - radius / (pJS.particles.shape.polygon.nb_sides/3.5), // startX
+        p.y - radius / (2.66/3.5), // startY
+        radius*2.66 / (pJS.particles.shape.polygon.nb_sides/3), // sideLength
+        pJS.particles.shape.polygon.nb_sides, // sideCountNumerator
+        1 // sideCountDenominator
+      );
+    break;
+
+    case 'star':
+      pJS.fn.vendors.drawShape(
+        pJS.canvas.ctx,
+        p.x - radius*2 / (pJS.particles.shape.polygon.nb_sides/4), // startX
+        p.y - radius / (2*2.66/3.5), // startY
+        radius*2*2.66 / (pJS.particles.shape.polygon.nb_sides/3), // sideLength
+        pJS.particles.shape.polygon.nb_sides, // sideCountNumerator
+        2 // sideCountDenominator
+      );
+    break;
+
+    case 'image':
+
+      function draw(){
+        pJS.canvas.ctx.drawImage(
+          img_obj,
+          p.x-radius,
+          p.y-radius,
+          radius*2,
+          radius*2 / p.img.ratio
+        );
+      }
+
+      if(pJS.tmp.img_type == 'svg'){
+        var img_obj = p.img.obj;
+      }else{
+        var img_obj = pJS.tmp.img_obj;
+      }
+
+      if(img_obj){
+        draw();
+      }
+
+    break;
+
+  }
+
+  pJS.canvas.ctx.closePath();
+
+  if(pJS.particles.shape.stroke.width > 0){
+    pJS.canvas.ctx.strokeStyle = pJS.particles.shape.stroke.color;
+    pJS.canvas.ctx.lineWidth = pJS.particles.shape.stroke.width;
+    pJS.canvas.ctx.stroke();
+  }
+  
+  pJS.canvas.ctx.fill();
+  
+};
+
+
+pJS.fn.particlesCreate = function(){
+  for(var i = 0; i < pJS.particles.number.value; i++) {
+    pJS.particles.array.push(new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value));
+  }
+};
+
+pJS.fn.particlesUpdate = function(){
+
+  for(var i = 0; i < pJS.particles.array.length; i++){
+
+    /* the particle */
+    var p = pJS.particles.array[i];
+
+    // var d = ( dx = pJS.interactivity.mouse.click_pos_x - p.x ) * dx + ( dy = pJS.interactivity.mouse.click_pos_y - p.y ) * dy;
+    // var f = -BANG_SIZE / d;
+    // if ( d < BANG_SIZE ) {
+    //     var t = Math.atan2( dy, dx );
+    //     p.vx = f * Math.cos(t);
+    //     p.vy = f * Math.sin(t);
+    // }
+
+    /* move the particle */
+    if(pJS.particles.move.enable){
+      var ms = pJS.particles.move.speed/2;
+      p.x += p.vx * ms;
+      p.y += p.vy * ms;
+    }
+
+    /* change opacity status */
+    if(pJS.particles.opacity.anim.enable) {
+      if(p.opacity_status == true) {
+        if(p.opacity >= pJS.particles.opacity.value) p.opacity_status = false;
+        p.opacity += p.vo;
+      }else {
+        if(p.opacity <= pJS.particles.opacity.anim.opacity_min) p.opacity_status = true;
+        p.opacity -= p.vo;
+      }
+      if(p.opacity < 0) p.opacity = 0;
+    }
+
+    /* change size */
+    if(pJS.particles.size.anim.enable){
+      if(p.size_status == true){
+        if(p.radius >= pJS.particles.size.value) p.size_status = false;
+        p.radius += p.vs;
+      }else{
+        if(p.radius <= pJS.particles.size.anim.size_min) p.size_status = true;
+        p.radius -= p.vs;
+      }
+      if(p.radius < 0) p.radius = 0;
+    }
+
+    /* change particle position if it is out of canvas */
+    if(pJS.particles.move.out_mode == 'bounce'){
+      var new_pos = {
+        x_left: p.radius,
+        x_right:  pJS.canvas.w,
+        y_top: p.radius,
+        y_bottom: pJS.canvas.h
+      }
+    }else{
+      var new_pos = {
+        x_left: -p.radius,
+        x_right: pJS.canvas.w + p.radius,
+        y_top: -p.radius,
+        y_bottom: pJS.canvas.h + p.radius
+      }
+    }
+
+    if(p.x - p.radius > pJS.canvas.w){
+      p.x = new_pos.x_left;
+      p.y = Math.random() * pJS.canvas.h;
+    }
+    else if(p.x + p.radius < 0){
+      p.x = new_pos.x_right;
+      p.y = Math.random() * pJS.canvas.h;
+    }
+    if(p.y - p.radius > pJS.canvas.h){
+      p.y = new_pos.y_top;
+      p.x = Math.random() * pJS.canvas.w;
+    }
+    else if(p.y + p.radius < 0){
+      p.y = new_pos.y_bottom;
+      p.x = Math.random() * pJS.canvas.w;
+    }
+
+    /* out of canvas modes */
+    switch(pJS.particles.move.out_mode){
+      case 'bounce':
+        if (p.x + p.radius > pJS.canvas.w) p.vx = -p.vx;
+        else if (p.x - p.radius < 0) p.vx = -p.vx;
+        if (p.y + p.radius > pJS.canvas.h) p.vy = -p.vy;
+        else if (p.y - p.radius < 0) p.vy = -p.vy;
+      break;
+    }
+
+    /* events */
+    if(isInArray('grab', pJS.interactivity.events.onhover.mode)){
+      pJS.fn.modes.grabParticle(p);
+    }
+
+    if(isInArray('bubble', pJS.interactivity.events.onhover.mode) || isInArray('bubble', pJS.interactivity.events.onclick.mode)){
+      pJS.fn.modes.bubbleParticle(p);
+    }
+
+    if(isInArray('repulse', pJS.interactivity.events.onhover.mode) || isInArray('repulse', pJS.interactivity.events.onclick.mode)){
+      pJS.fn.modes.repulseParticle(p);
+    }
+
+    /* interaction auto between particles */
+    if(pJS.particles.line_linked.enable || pJS.particles.move.attract.enable){
+      for(var j = i + 1; j < pJS.particles.array.length; j++){
+        var p2 = pJS.particles.array[j];
+
+        /* link particles */
+        if(pJS.particles.line_linked.enable){
+          pJS.fn.interact.linkParticles(p,p2);
+        }
+
+        /* attract particles */
+        if(pJS.particles.move.attract.enable){
+          pJS.fn.interact.attractParticles(p,p2);
+        }
+
+        /* bounce particles */
+        if(pJS.particles.move.bounce){
+          pJS.fn.interact.bounceParticles(p,p2);
+        }
+
+      }
+    }
+
+
+  }
+
+};
+
+pJS.fn.particlesDraw = function(){
+
+  /* clear canvas */
+  pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+
+  /* update each particles param */
+  pJS.fn.particlesUpdate();
+
+  /* draw each particle */
+  for(var i = 0; i < pJS.particles.array.length; i++){
+    var p = pJS.particles.array[i];
+    p.draw();
+  }
+
+};
+
+pJS.fn.particlesEmpty = function(){
+  pJS.particles.array = [];
+};
+
+pJS.fn.particlesRefresh = function(){
+
+  /* init all */
+  cancelRequestAnimFrame(pJS.fn.checkAnimFrame);
+  cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+  pJS.tmp.source_svg = undefined;
+  pJS.tmp.img_obj = undefined;
+  pJS.tmp.count_svg = 0;
+  pJS.fn.particlesEmpty();
+  pJS.fn.canvasClear();
+  
+  /* restart */
+  pJS.fn.vendors.start();
+
+};
+
+
+/* ---------- pJS functions - particles interaction ------------ */
+
+pJS.fn.interact.linkParticles = function(p1, p2){
+
+  var dx = p1.x - p2.x,
+      dy = p1.y - p2.y,
+      dist = Math.sqrt(dx*dx + dy*dy);
+
+  /* draw a line between p1 and p2 if the distance between them is under the config distance */
+  if(dist <= pJS.particles.line_linked.distance){
+
+    var opacity_line = pJS.particles.line_linked.opacity - (dist / (1/pJS.particles.line_linked.opacity)) / pJS.particles.line_linked.distance;
+
+    if(opacity_line > 0){        
+      
+      /* style */
+      var color_line = pJS.particles.line_linked.color_rgb_line;
+      pJS.canvas.ctx.strokeStyle = 'rgba('+color_line.r+','+color_line.g+','+color_line.b+','+opacity_line+')';
+      pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width;
+      //pJS.canvas.ctx.lineCap = 'round'; /* performance issue */
+      
+      /* path */
+      pJS.canvas.ctx.beginPath();
+      pJS.canvas.ctx.moveTo(p1.x, p1.y);
+      pJS.canvas.ctx.lineTo(p2.x, p2.y);
+      pJS.canvas.ctx.stroke();
+      pJS.canvas.ctx.closePath();
+
+    }
+
+  }
+
+};
+
+
+pJS.fn.interact.attractParticles  = function(p1, p2){
+
+  /* condensed particles */
+  var dx = p1.x - p2.x,
+      dy = p1.y - p2.y,
+      dist = Math.sqrt(dx*dx + dy*dy);
+
+  if(dist <= pJS.particles.line_linked.distance){
+
+    var ax = dx/(pJS.particles.move.attract.rotateX*1000),
+        ay = dy/(pJS.particles.move.attract.rotateY*1000);
+
+    p1.vx -= ax;
+    p1.vy -= ay;
+
+    p2.vx += ax;
+    p2.vy += ay;
+
+  }
+  
+
+}
+
+
+pJS.fn.interact.bounceParticles = function(p1, p2){
+
+  var dx = p1.x - p2.x,
+      dy = p1.y - p2.y,
+      dist = Math.sqrt(dx*dx + dy*dy),
+      dist_p = p1.radius+p2.radius;
+
+  if(dist <= dist_p){
+    p1.vx = -p1.vx;
+    p1.vy = -p1.vy;
+
+    p2.vx = -p2.vx;
+    p2.vy = -p2.vy;
+  }
+
+}
+
+
+/* ---------- pJS functions - modes events ------------ */
+
+pJS.fn.modes.pushParticles = function(nb, pos){
+
+  pJS.tmp.pushing = true;
+
+  for(var i = 0; i < nb; i++){
+    pJS.particles.array.push(
+      new pJS.fn.particle(
+        pJS.particles.color,
+        pJS.particles.opacity.value,
+        {
+          'x': pos ? pos.pos_x : Math.random() * pJS.canvas.w,
+          'y': pos ? pos.pos_y : Math.random() * pJS.canvas.h
+        }
+      )
+    )
+    if(i == nb-1){
+      if(!pJS.particles.move.enable){
+        pJS.fn.particlesDraw();
+      }
+      pJS.tmp.pushing = false;
+    }
+  }
+
+};
+
+
+pJS.fn.modes.removeParticles = function(nb){
+
+  pJS.particles.array.splice(0, nb);
+  if(!pJS.particles.move.enable){
+    pJS.fn.particlesDraw();
+  }
+
+};
+
+
+pJS.fn.modes.bubbleParticle = function(p){
+
+  /* on hover event */
+  if(pJS.interactivity.events.onhover.enable && isInArray('bubble', pJS.interactivity.events.onhover.mode)){
+
+    var dx_mouse = p.x - pJS.interactivity.mouse.pos_x,
+        dy_mouse = p.y - pJS.interactivity.mouse.pos_y,
+        dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse),
+        ratio = 1 - dist_mouse / pJS.interactivity.modes.bubble.distance;
+
+    function init(){
+      p.opacity_bubble = p.opacity;
+      p.radius_bubble = p.radius;
+    }
+
+    /* mousemove - check ratio */
+    if(dist_mouse <= pJS.interactivity.modes.bubble.distance){
+
+      if(ratio >= 0 && pJS.interactivity.status == 'mousemove'){
+        
+        /* size */
+        if(pJS.interactivity.modes.bubble.size != pJS.particles.size.value){
+
+          if(pJS.interactivity.modes.bubble.size > pJS.particles.size.value){
+            var size = p.radius + (pJS.interactivity.modes.bubble.size*ratio);
+            if(size >= 0){
+              p.radius_bubble = size;
+            }
+          }else{
+            var dif = p.radius - pJS.interactivity.modes.bubble.size,
+                size = p.radius - (dif*ratio);
+            if(size > 0){
+              p.radius_bubble = size;
+            }else{
+              p.radius_bubble = 0;
+            }
+          }
+
+        }
+
+        /* opacity */
+        if(pJS.interactivity.modes.bubble.opacity != pJS.particles.opacity.value){
+
+          if(pJS.interactivity.modes.bubble.opacity > pJS.particles.opacity.value){
+            var opacity = pJS.interactivity.modes.bubble.opacity*ratio;
+            if(opacity > p.opacity && opacity <= pJS.interactivity.modes.bubble.opacity){
+              p.opacity_bubble = opacity;
+            }
+          }else{
+            var opacity = p.opacity - (pJS.particles.opacity.value-pJS.interactivity.modes.bubble.opacity)*ratio;
+            if(opacity < p.opacity && opacity >= pJS.interactivity.modes.bubble.opacity){
+              p.opacity_bubble = opacity;
+            }
+          }
+
+        }
+
+      }
+
+    }else{
+      init();
+    }
+
+
+    /* mouseleave */
+    if(pJS.interactivity.status == 'mouseleave'){
+      init();
+    }
+  
+  }
+
+  /* on click event */
+  else if(pJS.interactivity.events.onclick.enable && isInArray('bubble', pJS.interactivity.events.onclick.mode)){
+
+
+    if(pJS.tmp.bubble_clicking){
+      var dx_mouse = p.x - pJS.interactivity.mouse.click_pos_x,
+          dy_mouse = p.y - pJS.interactivity.mouse.click_pos_y,
+          dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse),
+          time_spent = (new Date().getTime() - pJS.interactivity.mouse.click_time)/1000;
+
+      if(time_spent > pJS.interactivity.modes.bubble.duration){
+        pJS.tmp.bubble_duration_end = true;
+      }
+
+      if(time_spent > pJS.interactivity.modes.bubble.duration*2){
+        pJS.tmp.bubble_clicking = false;
+        pJS.tmp.bubble_duration_end = false;
+      }
+    }
+
+
+    function process(bubble_param, particles_param, p_obj_bubble, p_obj, id){
+
+      if(bubble_param != particles_param){
+
+        if(!pJS.tmp.bubble_duration_end){
+          if(dist_mouse <= pJS.interactivity.modes.bubble.distance){
+            if(p_obj_bubble != undefined) var obj = p_obj_bubble;
+            else var obj = p_obj;
+            if(obj != bubble_param){
+              var value = p_obj - (time_spent * (p_obj - bubble_param) / pJS.interactivity.modes.bubble.duration);
+              if(id == 'size') p.radius_bubble = value;
+              if(id == 'opacity') p.opacity_bubble = value;
+            }
+          }else{
+            if(id == 'size') p.radius_bubble = undefined;
+            if(id == 'opacity') p.opacity_bubble = undefined;
+          }
+        }else{
+          if(p_obj_bubble != undefined){
+            var value_tmp = p_obj - (time_spent * (p_obj - bubble_param) / pJS.interactivity.modes.bubble.duration),
+                dif = bubble_param - value_tmp;
+                value = bubble_param + dif;
+            if(id == 'size') p.radius_bubble = value;
+            if(id == 'opacity') p.opacity_bubble = value;
+          }
+        }
+
+      }
+
+    }
+
+    if(pJS.tmp.bubble_clicking){
+      /* size */
+      process(pJS.interactivity.modes.bubble.size, pJS.particles.size.value, p.radius_bubble, p.radius, 'size');
+      /* opacity */
+      process(pJS.interactivity.modes.bubble.opacity, pJS.particles.opacity.value, p.opacity_bubble, p.opacity, 'opacity');
+    }
+
+  }
+
+};
+
+
+pJS.fn.modes.repulseParticle = function(p){
+
+  if(pJS.interactivity.events.onhover.enable && isInArray('repulse', pJS.interactivity.events.onhover.mode) && pJS.interactivity.status == 'mousemove') {
+
+    var dx_mouse = p.x - pJS.interactivity.mouse.pos_x,
+        dy_mouse = p.y - pJS.interactivity.mouse.pos_y,
+        dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse);
+
+    var normVec = {x: dx_mouse/dist_mouse, y: dy_mouse/dist_mouse},
+        repulseRadius = pJS.interactivity.modes.repulse.distance,
+        velocity = 100,
+        repulseFactor = clamp((1/repulseRadius)*(-1*Math.pow(dist_mouse/repulseRadius,2)+1)*repulseRadius*velocity, 0, 50);
+    
+    var pos = {
+      x: p.x + normVec.x * repulseFactor,
+      y: p.y + normVec.y * repulseFactor
+    }
+
+    if(pJS.particles.move.out_mode == 'bounce'){
+      if(pos.x - p.radius > 0 && pos.x + p.radius < pJS.canvas.w) p.x = pos.x;
+      if(pos.y - p.radius > 0 && pos.y + p.radius < pJS.canvas.h) p.y = pos.y;
+    }else{
+      p.x = pos.x;
+      p.y = pos.y;
+    }
+  
+  }
+
+
+  else if(pJS.interactivity.events.onclick.enable && isInArray('repulse', pJS.interactivity.events.onclick.mode)) {
+
+    if(!pJS.tmp.repulse_finish){
+      pJS.tmp.repulse_count++;
+      if(pJS.tmp.repulse_count == pJS.particles.array.length){
+        pJS.tmp.repulse_finish = true;
+      }
+    }
+
+    if(pJS.tmp.repulse_clicking){
+
+      var repulseRadius = Math.pow(pJS.interactivity.modes.repulse.distance/6, 3);
+
+      var dx = pJS.interactivity.mouse.click_pos_x - p.x,
+          dy = pJS.interactivity.mouse.click_pos_y - p.y,
+          d = dx*dx + dy*dy;
+
+      var force = -repulseRadius / d * 1;
+
+      function process(){
+
+        var f = Math.atan2(dy,dx);
+        p.vx = force * Math.cos(f);
+        p.vy = force * Math.sin(f);
+
+        if(pJS.particles.move.out_mode == 'bounce'){
+          var pos = {
+            x: p.x + p.vx,
+            y: p.y + p.vy
+          }
+          if (pos.x + p.radius > pJS.canvas.w) p.vx = -p.vx;
+          else if (pos.x - p.radius < 0) p.vx = -p.vx;
+          if (pos.y + p.radius > pJS.canvas.h) p.vy = -p.vy;
+          else if (pos.y - p.radius < 0) p.vy = -p.vy;
+        }
+
+      }
+
+      // default
+      if(d <= repulseRadius){
+        process();
+      }
+
+      // bang - slow motion mode
+      // if(!pJS.tmp.repulse_finish){
+      //   if(d <= repulseRadius){
+      //     process();
+      //   }
+      // }else{
+      //   process();
+      // }
+      
+
+    }else{
+
+      if(pJS.tmp.repulse_clicking == false){
+
+        p.vx = p.vx_i;
+        p.vy = p.vy_i;
+      
+      }
+
+    }
+
+  }
+
+}
+
+
+pJS.fn.modes.grabParticle = function(p){
+
+  if(pJS.interactivity.events.onhover.enable && pJS.interactivity.status == 'mousemove'){
+
+    var dx_mouse = p.x - pJS.interactivity.mouse.pos_x,
+        dy_mouse = p.y - pJS.interactivity.mouse.pos_y,
+        dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse);
+
+    /* draw a line between the cursor and the particle if the distance between them is under the config distance */
+    if(dist_mouse <= pJS.interactivity.modes.grab.distance){
+
+      var opacity_line = pJS.interactivity.modes.grab.line_linked.opacity - (dist_mouse / (1/pJS.interactivity.modes.grab.line_linked.opacity)) / pJS.interactivity.modes.grab.distance;
+
+      if(opacity_line > 0){
+
+        /* style */
+        var color_line = pJS.particles.line_linked.color_rgb_line;
+        pJS.canvas.ctx.strokeStyle = 'rgba('+251+','+195+','+94+','+opacity_line+')';
+        pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width;
+        //pJS.canvas.ctx.lineCap = 'round'; /* performance issue */
+        
+        /* path */
+        pJS.canvas.ctx.beginPath();
+        pJS.canvas.ctx.moveTo(p.x, p.y);
+        pJS.canvas.ctx.lineTo(pJS.interactivity.mouse.pos_x, pJS.interactivity.mouse.pos_y);
+        pJS.canvas.ctx.stroke();
+        pJS.canvas.ctx.closePath();
+
+      }
+
+    }
+
+  }
+
+};
+
+
+
+/* ---------- pJS functions - vendors ------------ */
+
+pJS.fn.vendors.eventsListeners = function(){
+
+  /* events target element */
+  if(pJS.interactivity.detect_on == 'window'){
+    pJS.interactivity.el = window;
+  }else{
+    pJS.interactivity.el = pJS.canvas.el;
+  }
+
+
+  /* detect mouse pos - on hover / click event */
+  if(pJS.interactivity.events.onhover.enable || pJS.interactivity.events.onclick.enable){
+
+    /* el on mousemove */
+    pJS.interactivity.el.addEventListener('mousemove', function(e){
+
+      if(pJS.interactivity.el == window){
+        var pos_x = e.clientX,
+            pos_y = e.clientY;
+      }
+      else{
+        var pos_x = e.offsetX || e.clientX,
+            pos_y = e.offsetY || e.clientY;
+      }
+
+      pJS.interactivity.mouse.pos_x = pos_x;
+      pJS.interactivity.mouse.pos_y = pos_y;
+
+      if(pJS.tmp.retina){
+        pJS.interactivity.mouse.pos_x *= pJS.canvas.pxratio;
+        pJS.interactivity.mouse.pos_y *= pJS.canvas.pxratio;
+      }
+
+      pJS.interactivity.status = 'mousemove';
+
+    });
+
+    /* el on onmouseleave */
+    pJS.interactivity.el.addEventListener('mouseleave', function(e){
+
+      pJS.interactivity.mouse.pos_x = null;
+      pJS.interactivity.mouse.pos_y = null;
+      pJS.interactivity.status = 'mouseleave';
+
+    });
+
+  }
+
+  /* on click event */
+  if(pJS.interactivity.events.onclick.enable){
+
+    pJS.interactivity.el.addEventListener('click', function(){
+
+      pJS.interactivity.mouse.click_pos_x = pJS.interactivity.mouse.pos_x;
+      pJS.interactivity.mouse.click_pos_y = pJS.interactivity.mouse.pos_y;
+      pJS.interactivity.mouse.click_time = new Date().getTime();
+
+      if(pJS.interactivity.events.onclick.enable){
+
+        switch(pJS.interactivity.events.onclick.mode){
+
+          case 'push':
+            if(pJS.particles.move.enable){
+              pJS.fn.modes.pushParticles(pJS.interactivity.modes.push.particles_nb, pJS.interactivity.mouse);
+            }else{
+              if(pJS.interactivity.modes.push.particles_nb == 1){
+                pJS.fn.modes.pushParticles(pJS.interactivity.modes.push.particles_nb, pJS.interactivity.mouse);
+              }
+              else if(pJS.interactivity.modes.push.particles_nb > 1){
+                pJS.fn.modes.pushParticles(pJS.interactivity.modes.push.particles_nb);
+              }
+            }
+          break;
+
+          case 'remove':
+            pJS.fn.modes.removeParticles(pJS.interactivity.modes.remove.particles_nb);
+          break;
+
+          case 'bubble':
+            pJS.tmp.bubble_clicking = true;
+          break;
+
+          case 'repulse':
+            pJS.tmp.repulse_clicking = true;
+            pJS.tmp.repulse_count = 0;
+            pJS.tmp.repulse_finish = false;
+            setTimeout(function(){
+              pJS.tmp.repulse_clicking = false;
+            }, pJS.interactivity.modes.repulse.duration*1000)
+          break;
+
+        }
+
+      }
+
+    });
+      
+  }
+
+
+};
+
+pJS.fn.vendors.densityAutoParticles = function(){
+
+  if(pJS.particles.number.density.enable){
+
+    /* calc area */
+    var area = pJS.canvas.el.width * pJS.canvas.el.height / 1000;
+    if(pJS.tmp.retina){
+      area = area/(pJS.canvas.pxratio*2);
+    }
+
+    /* calc number of particles based on density area */
+    var nb_particles = area * pJS.particles.number.value / pJS.particles.number.density.value_area;
+
+    /* add or remove X particles */
+    var missing_particles = pJS.particles.array.length - nb_particles;
+    if(missing_particles < 0) pJS.fn.modes.pushParticles(Math.abs(missing_particles));
+    else pJS.fn.modes.removeParticles(missing_particles);
+
+  }
+
+};
+
+
+pJS.fn.vendors.checkOverlap = function(p1, position){
+  for(var i = 0; i < pJS.particles.array.length; i++){
+    var p2 = pJS.particles.array[i];
+
+    var dx = p1.x - p2.x,
+        dy = p1.y - p2.y,
+        dist = Math.sqrt(dx*dx + dy*dy);
+
+    if(dist <= p1.radius + p2.radius){
+      p1.x = position ? position.x : Math.random() * pJS.canvas.w;
+      p1.y = position ? position.y : Math.random() * pJS.canvas.h;
+      pJS.fn.vendors.checkOverlap(p1);
+    }
+  }
+};
+
+
+pJS.fn.vendors.createSvgImg = function(p){
+
+  /* set color to svg element */
+  var svgXml = pJS.tmp.source_svg,
+      rgbHex = /#([0-9A-F]{3,6})/gi,
+      coloredSvgXml = svgXml.replace(rgbHex, function (m, r, g, b) {
+        if(p.color.rgb){
+          var color_value = 'rgba('+p.color.rgb.r+','+p.color.rgb.g+','+p.color.rgb.b+','+p.opacity+')';
+        }else{
+          var color_value = 'hsla('+p.color.hsl.h+','+p.color.hsl.s+'%,'+p.color.hsl.l+'%,'+p.opacity+')';
+        }
+        return color_value;
+      });
+
+  /* prepare to create img with colored svg */
+  var svg = new Blob([coloredSvgXml], {type: 'image/svg+xml;charset=utf-8'}),
+      DOMURL = window.URL || window.webkitURL || window,
+      url = DOMURL.createObjectURL(svg);
+
+  /* create particle img obj */
+  var img = new Image();
+  img.addEventListener('load', function(){
+    p.img.obj = img;
+    p.img.loaded = true;
+    DOMURL.revokeObjectURL(url);
+    pJS.tmp.count_svg++;
+  });
+  img.src = url;
+
+};
+
+
+pJS.fn.vendors.destroypJS = function(){
+  cancelAnimationFrame(pJS.fn.drawAnimFrame);
+  canvas_el.remove();
+  pJSDom = null;
+};
+
+
+pJS.fn.vendors.drawShape = function(c, startX, startY, sideLength, sideCountNumerator, sideCountDenominator){
+
+  // By Programming Thomas - https://programmingthomas.wordpress.com/2013/04/03/n-sided-shapes/
+  var sideCount = sideCountNumerator * sideCountDenominator;
+  var decimalSides = sideCountNumerator / sideCountDenominator;
+  var interiorAngleDegrees = (180 * (decimalSides - 2)) / decimalSides;
+  var interiorAngle = Math.PI - Math.PI * interiorAngleDegrees / 180; // convert to radians
+  c.save();
+  c.beginPath();
+  c.translate(startX, startY);
+  c.moveTo(0,0);
+  for (var i = 0; i < sideCount; i++) {
+    c.lineTo(sideLength,0);
+    c.translate(sideLength,0);
+    c.rotate(interiorAngle);
+  }
+  //c.stroke();
+  c.fill();
+  c.restore();
+
+};
+
+pJS.fn.vendors.exportImg = function(){
+  window.open(pJS.canvas.el.toDataURL('image/png'), '_blank');
+};
+
+
+pJS.fn.vendors.loadImg = function(type){
+
+  pJS.tmp.img_error = undefined;
+
+  if(pJS.particles.shape.image.src != ''){
+
+    if(type == 'svg'){
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', pJS.particles.shape.image.src);
+      xhr.onreadystatechange = function (data) {
+        if(xhr.readyState == 4){
+          if(xhr.status == 200){
+            pJS.tmp.source_svg = data.currentTarget.response;
+            pJS.fn.vendors.checkBeforeDraw();
+          }else{
+            console.log('Error pJS - Image not found');
+            pJS.tmp.img_error = true;
+          }
+        }
+      }
+      xhr.send();
+
+    }else{
+
+      var img = new Image();
+      img.addEventListener('load', function(){
+        pJS.tmp.img_obj = img;
+        pJS.fn.vendors.checkBeforeDraw();
+      });
+      img.src = pJS.particles.shape.image.src;
+
+    }
+
+  }else{
+    console.log('Error pJS - No image.src');
+    pJS.tmp.img_error = true;
+  }
+
+};
+
+
+pJS.fn.vendors.draw = function(){
+
+  if(pJS.particles.shape.type == 'image'){
+
+    if(pJS.tmp.img_type == 'svg'){
+
+      if(pJS.tmp.count_svg >= pJS.particles.number.value){
+        pJS.fn.particlesDraw();
+        if(!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+        else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+      }else{
+        //console.log('still loading...');
+        if(!pJS.tmp.img_error) pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+      }
+
+    }else{
+
+      if(pJS.tmp.img_obj != undefined){
+        pJS.fn.particlesDraw();
+        if(!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+        else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+      }else{
+        if(!pJS.tmp.img_error) pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+      }
+
+    }
+
+  }else{
+    pJS.fn.particlesDraw();
+    if(!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+    else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+  }
+
+};
+
+
+pJS.fn.vendors.checkBeforeDraw = function(){
+
+  // if shape is image
+  if(pJS.particles.shape.type == 'image'){
+
+    if(pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg == undefined){
+      pJS.tmp.checkAnimFrame = requestAnimFrame(check);
+    }else{
+      //console.log('images loaded! cancel check');
+      cancelRequestAnimFrame(pJS.tmp.checkAnimFrame);
+      if(!pJS.tmp.img_error){
+        pJS.fn.vendors.init();
+        pJS.fn.vendors.draw();
+      }
+      
+    }
+
+  }else{
+    pJS.fn.vendors.init();
+    pJS.fn.vendors.draw();
+  }
+
+};
+
+
+pJS.fn.vendors.init = function(){
+
+  /* init canvas + particles */
+  pJS.fn.retinaInit();
+  pJS.fn.canvasInit();
+  pJS.fn.canvasSize();
+  pJS.fn.canvasPaint();
+  pJS.fn.particlesCreate();
+  pJS.fn.vendors.densityAutoParticles();
+
+  /* particles.line_linked - convert hex colors to rgb */
+  pJS.particles.line_linked.color_rgb_line = hexToRgb(pJS.particles.line_linked.color);
+
+};
+
+
+pJS.fn.vendors.start = function(){
+
+  if(isInArray('image', pJS.particles.shape.type)){
+    pJS.tmp.img_type = pJS.particles.shape.image.src.substr(pJS.particles.shape.image.src.length - 3);
+    pJS.fn.vendors.loadImg(pJS.tmp.img_type);
+  }else{
+    pJS.fn.vendors.checkBeforeDraw();
+  }
+
+};
+
+
+
+
+/* ---------- pJS - start ------------ */
+
+
+pJS.fn.vendors.eventsListeners();
+
+pJS.fn.vendors.start();
+
+
+
+};
+
+/* ---------- global functions - vendors ------------ */
+
+Object.deepExtend = function(destination, source) {
+for (var property in source) {
+  if (source[property] && source[property].constructor &&
+   source[property].constructor === Object) {
+    destination[property] = destination[property] || {};
+    arguments.callee(destination[property], source[property]);
+  } else {
+    destination[property] = source[property];
+  }
+}
+return destination;
+};
+
+window.requestAnimFrame = (function(){
+return  window.requestAnimationFrame ||
+  window.webkitRequestAnimationFrame ||
+  window.mozRequestAnimationFrame    ||
+  window.oRequestAnimationFrame      ||
+  window.msRequestAnimationFrame     ||
+  function(callback){
+    window.setTimeout(callback, 1000 / 60);
+  };
+})();
+
+window.cancelRequestAnimFrame = ( function() {
+return window.cancelAnimationFrame         ||
+  window.webkitCancelRequestAnimationFrame ||
+  window.mozCancelRequestAnimationFrame    ||
+  window.oCancelRequestAnimationFrame      ||
+  window.msCancelRequestAnimationFrame     ||
+  clearTimeout
+} )();
+
+function hexToRgb(hex){
+// By Tim Down - http://stackoverflow.com/a/5624139/3493650
+// Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+   return r + r + g + g + b + b;
+});
+var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+} : null;
+};
+
+function clamp(number, min, max) {
+return Math.min(Math.max(number, min), max);
+};
+
+function isInArray(value, array) {
+return array.indexOf(value) > -1;
+}
+
+
+/* ---------- particles.js functions - start ------------ */
+
+window.pJSDom = [];
+
+window.particlesJS = function(tag_id, params){
+
+//console.log(params);
+
+/* no string id? so it's object params, and set the id with default id */
+if(typeof(tag_id) != 'string'){
+  params = tag_id;
+  tag_id = 'particles-js';
+}
+
+/* no id? set the id to default id */
+if(!tag_id){
+  tag_id = 'particles-js';
+}
+
+/* pJS elements */
+var pJS_tag = document.getElementById(tag_id),
+    pJS_canvas_class = 'particles-js-canvas-el',
+    exist_canvas = pJS_tag.getElementsByClassName(pJS_canvas_class);
+
+/* remove canvas if exists into the pJS target tag */
+if(exist_canvas.length){
+  while(exist_canvas.length > 0){
+    pJS_tag.removeChild(exist_canvas[0]);
+  }
+}
+
+/* create canvas element */
+var canvas_el = document.createElement('canvas');
+canvas_el.className = pJS_canvas_class;
+
+/* set size canvas */
+canvas_el.style.width = "100%";
+canvas_el.style.height = "100%";
+
+/* append canvas */
+var canvas = document.getElementById(tag_id).appendChild(canvas_el);
+
+/* launch particle.js */
+if(canvas != null){
+  pJSDom.push(new pJS(tag_id, params));
+}
+
+};
+
+window.particlesJS.load = function(tag_id, path_config_json, callback){
+
+/* load json config */
+var xhr = new XMLHttpRequest();
+xhr.open('GET', path_config_json);
+xhr.onreadystatechange = function (data) {
+  if(xhr.readyState == 4){
+    if(xhr.status == 200){
+      var params = JSON.parse(data.currentTarget.response);
+      window.particlesJS(tag_id, params);
+      if(callback) callback();
+    }else{
+      console.log('Error pJS - XMLHttpRequest status: '+xhr.status);
+      console.log('Error pJS - File config not found');
+    }
+  }
+};
+xhr.send();
+
+};
+</script>
+        <div class="child-top-sec slider-container">
+          
+            <!-- Slide 1 -->
+            <div class="slide-item"
+                style="background-image: url(./img/happy-japanese-family.png); background-repeat: no-repeat; background-position: center; background-size: cover; object-fit: cover;">
+                <div class="container-fluid p-0">
+                    <nav class="d-flex justify-content-between align-items-center px-5 py-4">
+                        <a href="" class="navbar-brand p-0">
+                            <h1 class="display-5 text-black m-0 text-white logo-text">
+                                ロゴ
+                            </h1>
+                        </a>
+                        <a href="./get-quote.html" style="font-size: 16px !important;"
+                            class="btn header-btn rounded-pill py-3 px-5 px-lg-3 mb-3 mb-md-3 mb-lg-0" style="padding: 10px 30px !important; font-size: 18px !important;">見積もりを取得する</a>
+                    </nav>
+                </div>
+                <div class="container top-banner-content">
+                    <div class="row align-items-center">
+                        <div class="col-sm-7">
+                            <h1 class="main-heading-hero text-capitalize text-black mb-3 mb-md-4 text-white"
+                                data-wow-delay="0.3s">ご家庭に最適なコーティングサービスを見つけよう</h1>
+                            <p class="text-black mb-4 mb-md-5 fs-5" style="font-weight: 600; font-size: 16px !important; background: rgb(204 255 153 / 80%);
+                               padding: 20px; border-radius: 10px;" data-wow-delay="0.5s">
+                                複数の見積もりを簡単にリクエストし、信頼できる専門家の中から理想のコーティングソリューションを見つけましょう。
+                            </p>
+                            <a class="btn rounded-pill text-white py-3 px-5" style="padding: 10px 30px !important; font-size: 18px !important;"
+                                data-wow-delay="0.7s" href="#">詳細を見る</a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-sm-4">
+                            <form action="#">
+                                <h3 class="text-capitalize text-black mb-3 mb-md-4" data-wow-delay="0.3s">お見積もり</h3>
+                                <div class="form-group mt-4 d-flex gap-3">
+                                    <div>
+                                        <label for="current-address" class="form-label">現在の住所</label>
+                                        <input type="text" style="font-size: 16px !important;" class="form-control"
+                                            id="current-address" placeholder="現在の住所">
+                                    </div>
+                                    <div>
+                                        <label for="postal-code" class="form-label">郵便番号</label>
+                                        <input type="text" style="font-size: 16px !important;" class="form-control"
+                                            id="postal-code" placeholder="郵便番号">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="prefecture" class="form-label">都道府県</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="prefecture" placeholder="都道府県">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="municipality" class="form-label">市区町村</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="municipality" placeholder="市区町村">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="street-address" class="form-label">町名・番地</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="street-address" placeholder="町名・番地">
+                                </div>
+                                <div class="form-group mt-3 mb-4">
+                                    <label for="building-name" class="form-label">建物名</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="building-name" placeholder="建物名">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add additional slides here if needed -->
+            <div class="slide-item" style="background-image: url(./img/top-section-3.jpg);  object-fit: 
+            cover; background-repeat: no-repeat; background-position: center;">
+                <div class="container-fluid p-0">
+                    <nav class="d-flex justify-content-between align-items-center px-5 py-4">
+                        <a href="" class="navbar-brand p-0">
+                            <h1 class="display-5 text-black m-0 text-white logo-text">
+                                ロゴ
+                            </h1>
+                        </a>
+                        <a href="./get-quote.html"
+                            class="btn header-btn rounded-pill px-lg-3 mb-3 mb-md-3 mb-lg-0" style="padding: 10px 30px !important; font-size: 18px !important;">見積もりを取得する</a>
+                    </nav>
+                </div>
+                <div class="container top-banner-content">
+                    <div class="row align-items-center">
+                        <div class="col-sm-7">
+                            <h1 class="main-heading-hero text-capitalize text-black mb-3 mb-md-4 text-white"
+                                data-wow-delay="0.3s">ご家庭に最ご家庭に最適なコーテご家庭に最適なコー</h1>
+                            <p class="text-black mb-4 mb-md-5 fs-5" style="font-weight: 600; font-size: 16px !important; background: rgb(204 255 153 / 80%);
+                               padding: 20px; border-radius: 10px;" data-wow-delay="0.5s">
+                                複数の見積もりを簡単にリクエストし、信頼できンを見つけましょう。
+                            </p>
+                            <a class="btn rounded-pill text-white py-3 px-5" style="font-size: 18px !important;"
+                                data-wow-delay="0.7s" href="#">詳細を見る</a>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-sm-4">
+                            <form action="#">
+                                <h3 class="text-capitalize text-black mb-3 mb-md-4" data-wow-delay="0.3s">お見積もり</h3>
+                                <div class="form-group mt-4 d-flex gap-3">
+                                    <div>
+                                        <label for="current-address" class="form-label">現在の住所</label>
+                                        <input type="text" style="font-size: 16px !important;" class="form-control"
+                                            id="current-address" placeholder="現在の住所">
+                                    </div>
+                                    <div>
+                                        <label for="postal-code" class="form-label">郵便番号</label>
+                                        <input type="text" style="font-size: 16px !important;" class="form-control"
+                                            id="postal-code" placeholder="郵便番号">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="prefecture" class="form-label">都道府県</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="prefecture" placeholder="都道府県">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="municipality" class="form-label">市区町村</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="municipality" placeholder="市区町村">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="street-address" class="form-label">町名・番地</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="street-address" placeholder="町名・番地">
+                                </div>
+                                <div class="form-group mt-3 mb-4">
+                                    <label for="building-name" class="form-label">建物名</label>
+                                    <input type="text" style="font-size: 16px !important;" class="form-control"
+                                        id="building-name" placeholder="建物名">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Counter Facts Start -->
+    <div class="container mt-5">
+        <div class="section-title text-center mb-5 wow fadeInUp pt-5" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">仕組み</h5>
+            </div>
+            <h1 class="display-5 mb-4">簡単比較のシンプル化</h1>
+            <p class="mb-0">
+                私たちの効率的なプロセスにより、見積もりを迅速にリクエストし、複数の競争力のある見積もりを受け取り、最適なサービスプロバイダーを選択することで、すべてのコーティングニーズに対して煩わしさのない体験を提供します。
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid counter-facts pb-5">
+
+        <div class="container pt-4">
+
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 work-1 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>簡単な提出</h3>
+                            <p>あなたの情報と要件を含む短いオンラインフォームを完成させるだけです。このプロセスは迅速かつユーザーフレンドリーで、手間なく見積もりを受け取ることができます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-1">
+                    <div class="work-center-icon d-flex justify-content-center align-items-center h-100">
+                        <i class="fa fa-long-arrow-alt-right" style="font-size: 40px"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 work-2 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>比較結果の受領</h3>
+                            <p>提出が処理されると、事前に審査されたプロフェッショナルから最大3つの競争力のある見積もりを受け取ります。これにより、プロジェクトのための複数の選択肢を確認できます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-1">
+                    <div class="work-center-icon d-flex justify-content-center align-items-center h-100">
+                        <i class="fa fa-long-arrow-alt-right" style="font-size: 40px"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-xl-3 work-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="counter">
+                        <div class="counter-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="counter-content">
+                            <h3>プロバイダーの選択</h3>
+                            <p>価格、サービス、レビューに基づいて見積もりを比較します。あなたのニーズと予算に最適なプロバイダーを選択し、プロジェクトに対する情報に基づいた決定を行うことができます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Counter Facts End -->
+
+    <div class="separator-img-sec pt-4 pb-5" id="whychooseus">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div>
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row gap-5 justify-content-center pt-5">
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <h5 class="sub-title pe-3">水域エリアの専門家</h5>
+                    <h1 class="display-4 mb-4">コーティングサービスガイドとして頼れる存在</h1>
+                    <p class="mb-4">新築でも既存でも、ご家庭の水域を保護し、美しくするために、信頼できる経験豊富なコーティングプロフェッショナルとおつなぎします。</p>
+                    <div class="row gy-4 align-items-center">
+                        <!-- <div class="col-12 col-sm-6 d-flex align-items-center">
+                                    <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
+                                    <h5 class="ms-4">手頃な価格のコーティングソリューション</h5>
+                                </div> -->
+                        <div class="col-12 d-flex align-items-center">
+                            <i class="fas fa-passport fa-3x text-custom-orange-icon"></i>
+                            <h3 class="ms-3 mb-0">信頼と確認済みの契約者</h3>
+                        </div>
+                        <div class="col-8 col-md-9 mt-5">
+                            <div class="mb-5">
+                                <p class="text-primary h6 mb-3" style="font-size: 16px !important;"><i
+                                        class="fa fa-check-circle text-custom-green-icon me-2"></i>
+                                    すべてのサービスで品質保証</p>
+                                <p class="text-primary h6 mb-3" style="font-size: 16px !important;"><i
+                                        class="fa fa-check-circle text-custom-green-icon me-2"></i>
+                                    コーティングコストの大幅な節約</p>
+                                <p class="text-primary h6 mb-3" style="font-size: 16px !important;"><i
+                                        class="fa fa-check-circle text-custom-green-icon me-2"></i>
+                                    無料で迅速な比較プロセス</p>
+                                <p class="text-primary h6 mb-3" style="font-size: 16px !important;"><i
+                                        class="fa fa-check-circle text-custom-green-icon me-2"></i>
+                                    確認済みで経験豊富な契約者のみ</p>
+                                <p class="text-primary h6 mb-3" style="font-size: 16px !important;"><i
+                                        class="fa fa-check-circle text-custom-green-icon me-2"></i>
+                                    隠れた料金や手数料なし</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="bg-light rounded">
+                        <img src="img/family.jpg" class="img-fluid w-100 about-img" alt="画像">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- About End -->
+    <div class="separator-img-sec py-5" id="howitworks">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 top-banner-p">
+                <h2 class="text-center display-6 mb-4 top-head-h">床の性能を向上させます！</h2>
+                <div class="top-banner-img">
+                    <img src="./img/top-1.jpeg" alt="">
+                </div>
+                <p>床材は耐久性のある素材ですが、時間が経つにつれて湿気、傷、紫外線などの影響で劣化し、ひび割れ、反り、黒ずみや色あせが生じ、美観が損なわれます。床のコーティングは、水や化学薬品に対する耐性や耐久性を大幅に向上させ、定期的なワックスがけを不要にし、長期間にわたって床の外観を保護する解決策を提供します。
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12 top-banner-p">
+                <h3 class="text-center display-6 mb-4 top-head-h">高価な床コーティングは本当に必要ですか？</h3>
+                <div class="top-banner-img">
+                    <img src="./img/top-2.jpg" alt="">
+                </div>
+                <p>高価な床材が本当に良いのでしょうか？安い床コーティングで問題ないのでしょうか？これはよくある質問ですが、誤解を反映しています。最善の方法は、信頼できる業者が適正な価格で直接お客様に提供することです。当ウェブサイトで紹介されている業者は、品質と信頼性を確保するための特定の基準を満たしています。
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-2">
+                <button type="button" class="btn nav-btn-check btn-primary btn-block">施工内容</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn nav-btn-check btn-primary btn-block">インストール</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn nav-btn-check btn-primary btn-block">施工</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn nav-btn-check btn-primary btn-block">使用されるソリューション</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn nav-btn-check btn-primary btn-block">カスタマーサービス</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="separator-img-sec pt-4 pb-5" id="whychooseus">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <h2 class="table-title">水回りを優先</h2>
+        <table class="table table-bordered floor-table">
+            <thead>
+                <tr>
+                    <th>コーティング</th>
+                    <th>耐久年数(製品による)</th>
+                    <th>施工場所</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>防カビコーティング</td>
+                    <td>1-5年</td>
+                    <td>浴室・洗面所・トイレ・キッチン</td>
+                    <td class="slipstop-symbol"></td>
+                </tr>
+                <tr>
+                    <td class="lighter-green">水回り防汚コーティング</td>
+                    <td class="lighter-green">1-5年</td>
+                    <td class="lighter-green">浴室・洗面所・トイレ・キッチン</td>
+                    <td class="lighter-green slipstop-symbol"></td>
+                </tr>
+                <tr>
+                    <td>クロスコーティング</td>
+                    <td>10年前後</td>
+                    <td>壁紙・クロス</td>
+                    <td class="slipstop-symbol"></td>
+                </tr>
+                <tr>
+                    <td class="lighter-green">光(無光)触媒コーティング</td>
+                    <td class="lighter-green">5-30年(半永久)</td>
+                    <td class="lighter-green">壁紙・クロス・ドアや手すり</td>
+                    <td class="lighter-green slipstop-symbol"></td>
+                </tr>
+                <tr>
+                    <td>石材コーティング</td>
+                    <td>10年程度</td>
+                    <td>玄関石材・タイル部</td>
+                    <td class="slipstop-symbol"></td>
+                </tr>
+                <tr>
+                    <td class="lighter-green">フロアコーティング</td>
+                    <td class="lighter-green">3-30年</td>
+                    <td class="lighter-green">フローリング・クッションフロア</td>
+                    <td class="lighter-green slipstop-symbol"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- <div class="separator-img-sec pt-4 pb-5" id="whychooseus">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div> -->
+
+
+
+
+    <div class="container-fluid top-3-bottom py-5"
+        style="background-image: url(https://tilemax.wpenginepowered.com/wp-content/uploads/2017/10/slider3.jpg); background-attachment: fixed;">
+        <div class="container">
+            <!-- Box 1 -->
+            <div class="info-box">
+                <img src="./img/1.png" alt="Icon 1"> <!-- Update with your icon path -->
+                <div class="text-content">
+                    <h5>1. 相場価格がわかる。</h5>
+                    <p>最大8社からの見積もり価格が送られて来るので、相場の価格がわかりやすいのがメリットです。</p>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="info-box">
+                <img src="./img/2.png" alt="Icon 2"> <!-- Update with your icon path -->
+                <div class="text-content">
+                    <h5>2. 他者と比較ができる。</h5>
+                    <p>個別見積もりだと比較対象がないため、価格やサービス内容が適正なのか判断がつきません。一括見積もりなら、同時に何社もの価格やサービスを比較できるので安心です。</p>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="info-box">
+                <img src="./img/3.png" alt="Icon 3"> <!-- Update with your icon path -->
+                <div class="text-content">
+                    <h5>3. あなたにあった業者が見つかる。</h5>
+                    <p>フロアコーティングにはさまざまな種類があり、目的にあったコーティング方法を得意としている業者に依頼するのが一番です。費用も時間もかからず安心です。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="separator-img-sec pt-4 pb-5" id="whychooseus">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div> -->
+
+
+
+
+    <div class="container">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="display-5 mb-4">たくさんの喜びの声</h1>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="quote-card">
+                    <img src="./img/carousel-1.jpg" alt="見積もり画像" class="quote-image">
+                    <div class="quote-text">複数の会社から見積もりを比較して、100,000円節約しました。</div>
+                    <div class="price-section">
+                        <span class="old-price">400,000円</span> → <span class="new-price">300,000円</span>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-tag">市場価格</div>
+                        <div class="price-tag lowest-price-tag">最安値</div>
+                        <ul class="list-unstyled">
+                            <li>抗菌コーティング</li>
+                            <li>4LDK（90㎡）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="quote-card">
+                    <img src="./img/carousel-2.jpg" alt="見積もり画像" class="quote-image">
+                    <div class="quote-text">素晴らしい取引を見つけて、リフォームで70,000円節約しました。</div>
+                    <div class="price-section">
+                        <span class="old-price">300,000円</span> → <span class="new-price">230,000円</span>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-tag">市場価格</div>
+                        <div class="price-tag lowest-price-tag">最安値</div>
+                        <ul class="list-unstyled">
+                            <li>防水コーティング</li>
+                            <li>2LDK（65㎡）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="quote-card">
+                    <img src="./img/carousel-3.jpg" alt="見積もり画像" class="quote-image">
+                    <div class="quote-text">複数の会社から見積もりを比較して、80,000円節約しました。</div>
+                    <div class="price-section">
+                        <span class="old-price">280,000円</span> → <span class="new-price">200,000円</span>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-tag">市場価格</div>
+                        <div class="price-tag lowest-price-tag">最安値</div>
+                        <ul class="list-unstyled">
+                            <li>エコ塗料</li>
+                            <li>3LDK（78㎡）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="quote-card">
+                    <img src="./img/carousel-3.jpg" alt="見積もり画像" class="quote-image">
+                    <div class="quote-text">見積もりを取ることで、120,000円の節約ができました。</div>
+                    <div class="price-section">
+                        <span class="old-price">500,000円</span> → <span class="new-price">380,000円</span>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-tag">市場価格</div>
+                        <div class="price-tag lowest-price-tag">最安値</div>
+                        <ul class="list-unstyled">
+                            <li>耐熱コーティング</li>
+                            <li>5LDK（120㎡）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="quote-card">
+                    <img src="./img/carousel-1.jpg" alt="見積もり画像" class="quote-image">
+                    <div class="quote-text">迅速な見積もり比較で、60,000円節約しました。</div>
+                    <div class="price-section">
+                        <span class="old-price">220,000円</span> → <span class="new-price">160,000円</span>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-tag">市場価格</div>
+                        <div class="price-tag lowest-price-tag">最安値</div>
+                        <ul class="list-unstyled">
+                            <li>耐候性塗料</li>
+                            <li>2LDK（55㎡）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="quote-card">
+                    <img src="./img/carousel-2.jpg" alt="見積もり画像" class="quote-image">
+                    <div class="quote-text">複数の業者から見積もりを依頼して、90,000円節約しました。</div>
+                    <div class="price-section">
+                        <span class="old-price">360,000円</span> → <span class="new-price">270,000円</span>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-tag">市場価格</div>
+                        <div class="price-tag lowest-price-tag">最安値</div>
+                        <ul class="list-unstyled">
+                            <li>防錆コーティング</li>
+                            <li>4LDK（85㎡）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button class="bulk-quote-button">一括見積もりを始める</button>
+        </div>
+    </div>
+
+
+
+    <div class="separator-img-sec pt-4 pb-5" id="whychooseus">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="display-5">私たちを選ぶ利点</h1>
+        </div>
+    </div>
+
+
+
+    <!-- Features Start -->
+    <div class="container-fluid features overflow-hidden">
+        <div class="container">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3 mb-3">私たちを選ぶ理由</h5>
+                </div>
+                <h1 class="display-5 mb-4">コーティングサービスで比類のない価値を体験</h1>
+                <p class="mb-0">
+                    私たちのプラットフォームがどのようにあなたを専門の契約者とつなぎ、質の高いコーティングサービスを大幅な節約で提供するかをご覧ください。迅速な比較と卓越した顧客サービスを享受し、一人で探す煩わしさなく、情報に基づいた決定を下すことができます。
+                </p>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="feature-item text-center p-4">
+                                <div class="feature-icon p-3 mb-4">
+                                    <i class="fa fa-tools fa-4x text-white"></i>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-3">専門契約者</h5>
+                                    <p class="mb-3">信頼されている経験豊富な契約者のみが、ここで高品質なコーティングサービスを提供します。</p>
+                                    <a class="btn btn-green-custom rounded-pill" href="#">詳細を見る<i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="feature-item text-center p-4">
+                                <div class="feature-icon p-3 mb-4">
+                                    <i class="fa fa-money-bill-wave fa-4x text-white"></i>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-3">コスト削減</h5>
+                                    <p class="mb-3">
+                                        標準的な新築に比べて改修費用を 50% 節約し、手頃な価格で改良できます。</p>
+                                    <a class="btn btn-green-custom rounded-pill" href="#">詳細を見る<i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="feature-item text-center p-4">
+                                <div class="feature-icon p-3 mb-4">
+                                    <i class="fa fa-stopwatch fa-4x text-white"></i>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-3">迅速な比較</h5>
+                                    <p class="mb-3">複数の会社から迅速かつ無料の見積もりを受け取り、簡単にコストを比較できます。</p>
+                                    <a class="btn btn-green-custom rounded-pill" href="#">詳細を見る<i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="feature-item text-center p-4">
+                                <div class="feature-icon p-3 mb-4">
+                                    <i class="fa fa-shield-alt fa-4x text-white"></i>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-3">透明な価格設定</h5>
+                                    <p class="mb-3">隠れた料金なし—当社の最高のサービスについて信頼できる明確な包括的な見積もりを受け取ります。</p>
+                                    <a class="btn btn-green-custom rounded-pill" href="#">詳細を見る<i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <a class="btn btn-color-custom border-secondary py-3 px-5 wow fadeInUp" data-wow-delay="0.1s"
+                        href="#">さらに多くの機能</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features End -->
+
+    <div class="separator-img-sec pt-5 pb-4" id="testimonials">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div>
+
+    <!-- Testimonial Start -->
+
+
+    <div class="container">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3 mb-3">お客様の声</h5>
+            </div>
+            <h1 class="display-5 mb-4">コーティングサービスで比類のない価値を体験</h1>
+            <p class="mb-0">
+                私たちのプラットフォームがどのようにあなたを専門の契約者とつなぎ、質の高いコーティングサービスを大幅な節約で提供するかをご覧ください。迅速な比較と卓越した顧客サービスを享受し、一人で探す煩わしさなく、情報に基づいた決定を下すことができます。
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <link rel="stylesheet" href="https://www.mitsumori-navi.biz/css/global.css">
+                <div class="repeater-voice-box flex sp-slide">
+                    <div class="voicebox-child fuwat">
+                        <p class="fl mr10"><img src="https://www.mitsumori-navi.biz/images/top/img-voise-thumb1.png" alt=""></p>
+                        <div>
+                            <p><img src="https://www.mitsumori-navi.biz/images/top/voice-title1.png" 
+                                    alt="迅速かつ信頼できるフローリングサービス" class="pc"><img src="images/sp/top/voice-title1.png" 
+                                    alt="迅速かつ信頼できるフローリングサービス" class="sp" width="100%"></p>
+                            <p class="f15">スケジュールが非常にタイトな中、複数の信頼できるフローリング業者を迅速に見つけることができて助かりました。初めての利用でしたが、とても便利なサービスでした。</p>
+                        </div>
+                    </div>
+        
+                    <div class="voicebox-child fuwat">
+                        <p class="fl mr10"><img src="https://www.mitsumori-navi.biz/images/top/img-voise-thumb2.png" alt=""></p>
+                        <div>
+                            <p><img src="https://www.mitsumori-navi.biz/images/top/voice-title2.png" 
+                                    alt="フローリング業者の簡単な比較" class="pc"><img src="images/sp/top/voice-title2.png" 
+                                    alt="フローリング業者の簡単な比較" class="sp"></p>
+                            <p class="f15">信頼できる経験豊富な業者のみ掲載されているので、安心して簡単に比較することができました。またぜひ利用したいと思います。</p>
+                        </div>
+                    </div>
+        
+                    <div class="voicebox-child fuwat">
+                        <p class="fl mr10"><img src="https://www.mitsumori-navi.biz/images/top/img-voise-thumb3.png" alt=""></p>
+                        <div>
+                            <p><img src="https://www.mitsumori-navi.biz/images/top/voice-title3.png" 
+                                    alt="友人に紹介されました" class="pc"><img src="images/sp/top/voice-title3.png" 
+                                    alt="友人に紹介されました" class="sp" width="100%"></p>
+                            <p class="f15">友人からこのサイトを聞きました。忙しい引っ越しの中、このサービスのおかげで手頃な価格で信頼できるフローリング業者を簡単に見つけることができました。</p>
+                        </div>
+                    </div>
+        
+                    <div class="voicebox-child fuwat">
+                        <p class="fl mr10"><img src="https://www.mitsumori-navi.biz/images/top/img-voise-thumb4.png" alt=""></p>
+                        <div>
+                            <p><img src="https://www.mitsumori-navi.biz/images/top/voice-title4.png" 
+                                    alt="複数の見積もりで手頃な価格" class="pc"><img src="images/sp/top/voice-title4.png" 
+                                    alt="複数の見積もりで手頃な価格" class="sp" width="100%"></p>
+                            <p class="f15">いくつかの業者から見積もりを取りましたが、このサービスを通じて最適な価格で高品質なフローリング業者を見つけることができました。非常におすすめです！</p>
+                        </div>
+                    </div>
+        
+                    <div class="voicebox-child fuwat">
+                        <p class="fl mr10"><img src="https://www.mitsumori-navi.biz/images/top/img-voise-thumb5.png" alt=""></p>
+                        <div>
+                            <p><img src="https://www.mitsumori-navi.biz/images/top/voice-title5.png" 
+                                    alt="しつこい営業電話がありません" class="pc"><img src="images/sp/top/voice-title5.png" 
+                                    alt="しつこい営業電話がありません" class="sp" width="100%"></p>
+                            <p class="f15">他のプラットフォームでは営業電話が多かったですが、このサービスではしつこい連絡が一切なく、とても便利でした。</p>
+                        </div>
+                    </div>
+        
+                    <div class="voicebox-child fuwat">
+                        <p class="fl mr10"><img src="https://www.mitsumori-navi.biz/images/top/img-voise-thumb6.png" alt=""></p>
+                        <div>
+                            <p><img src="https://www.mitsumori-navi.biz/images/top/voice-title6.png" 
+                                    alt="リピーターとして利用しました" class="pc"><img src="images/sp/top/voice-title6.png" 
+                                    alt="リピーターとして利用しました" class="sp" width="100%"></p>
+                            <p class="f15">他の業者からも見積もりを取りましたが、やはりこのサイトが紹介する業者が最安値でした。今回も素晴らしいサービスをありがとうございました。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- About End -->
+    <div class="separator-img-sec py-5" id="howitworks">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div>
+
+    <!-- Counter Facts Start -->
+    <div class="container">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">始める</h5>
+            </div>
+            <h1 class="display-5 mb-4 mt-2">今すぐ無料見積もりをリクエスト</h1>
+            <p class="mb-0 mt-4 ">
+                トップレートのコーティング専門家から詳細な見積もりを受け取ります。私たちの簡単なプロセスで、品質と価値を重視する専門家とつながり、すべてのプロジェクトに競争力のある料金を提供します。</p>
+            <p class="mb-0 mt-4 ">
+                オプションを迅速かつ自信を持って比較できます。私たちはプロセスを簡素化し、最大3件のパーソナライズされた見積もりを提供するので、ストレスなくコーティングニーズに最適なものを選択できます。</p>
+            <!-- <a href="./get-quote.html" class="btn btn-custom-color border-secondary py-4 px-5 mt-5">見積もりを取得する</a> -->
+            <a href="./get-quote.html" class="btn btn-color-custom border-secondary mt-4 py-3 px-5 wow fadeInUp"
+                data-wow-delay="0.1s" href="#">見積もりを取得する</a>
+        </div>
+    </div>
+
+
+
+    <!-- Testimonial End -->
+
+    <div class="separator-img-sec pt-4 pb-5" id="whychooseus">
+        <div class="pt-3">
+            <img src="img/separaror.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container mb-4">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">クイックアンサー</h5>
+            </div>
+            <h1 class="display-5 mb-4 mt-2">質問に答えます</h1>
+            <p class="mb-0">見積もりプロセス、価格、コーティングなどに関する一般的な質問への明確で前向きな回答を見つけてください。あなたの体験をスムーズで完全に透明にするためにデザインされています。
+            </p>
+        </div>
+        <div class="faq-section">
+
+            <div class="faq-item mb-4">
+                <div class="faq-q">
+                    <div class="faq-icon">Q</div>
+                    <div>
+                        <h5>見積もりプロセスにはどのくらいの時間がかかりますか？</h5>
+                    </div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-icon">A</div>
+                    <div>
+                        <p class="faq-answer-title">プロセスは迅速で、最短1分で完了します！</p>
+                        <p>お客様の利便性を考慮し、時間をかけずに見積もりをご案内します。条件によってはさらに短縮でき、無駄なく進行します。</p>
+                        <p>いつでもご連絡いただければ、迅速な対応をお約束します。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-4">
+                <div class="faq-q">
+                    <div class="faq-icon">Q</div>
+                    <div>
+                        <h5>隠れた手数料はありますか？</h5>
+                    </div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-icon">A</div>
+                    <div>
+                        <p class="faq-answer-title">いいえ、すべての価格は前もって表示され、総費用は明確に示されています。</p>
+                        <p>透明性を重視し、追加料金が発生しないよう徹底しています。すべての費用を初めにご提示し、後で驚かされることはありません。</p>
+                        <p>安心してご利用いただけるよう努めています。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-4">
+                <div class="faq-q">
+                    <div class="faq-icon">Q</div>
+                    <div>
+                        <h5>異なる種類のコーティングの見積もりを取得できますか？</h5>
+                    </div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-icon">A</div>
+                    <div>
+                        <p class="faq-answer-title">はい！私たちのサービスは、あなたの家のさまざまなエリアのための多様なコーティングをカバーしています。</p>
+                        <p>当社では複数のコーティングオプションを提供しており、異なるご要望にお応えできます。エリアごとに最適な仕上げを選ぶことが可能です。</p>
+                        <p>詳細はご相談いただければ、ご案内します。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-4">
+                <div class="faq-q">
+                    <div class="faq-icon">Q</div>
+                    <div>
+                        <h5>見積もりはどのように取得できますか？</h5>
+                    </div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-icon">A</div>
+                    <div>
+                        <p class="faq-answer-title">オンラインフォームに記入するか、カスタマーサービスに連絡することで見積もりを取得できます。</p>
+                        <p>手軽にご利用いただけるオンラインフォームがあり、すぐに見積もりを開始できます。電話でもサポートを行っており、お客様の利便性に合わせた方法で対応しています。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item mb-4">
+                <div class="faq-q">
+                    <div class="faq-icon">Q</div>
+                    <div>
+                        <h5>無料相談を提供していますか？</h5>
+                    </div>
+                </div>
+                <div class="faq-a">
+                    <div class="faq-icon">A</div>
+                    <div>
+                        <p class="faq-answer-title">はい、私たちはお客様のニーズに最適なオプションを決定するために、無料相談を提供しています。</p>
+                        <p>お客様のご要望を十分に理解した上で、最適なソリューションを提供できるよう努めています。お気軽にご相談ください。</p>
+                        <p>無償のアドバイスで、お客様の最善の選択をサポートします。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CTAセクション -->
+    <div class="container-fluid cta-section" style="background-color: #FDFDF4;">
+        <!-- <img src="./img/cta.png" style="width: 80%;" alt=""> -->
+        <div class="row align-items-lg-center h-100">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+                <h2 class="display-5 text-left text-capitalize text-black wow fadeInUp" data-wow-delay="0.3s"
+                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">コーティングのための信頼できる品質</h2>
+                <p class="mb-0 text-black" style="color: #000 !important">最高のクラスのテンプレートを無料のスペースアカウントで試してみてください。</p>
+            </div>
+            <div class="col-lg-5 d-flex align-items-center justify-content-center" style="text-align: right;">
+                <a href="./get-quote.html" class="btn-color-custom " style="background-color: #FFA000; border: none; color: white; padding: 40px 40px; font-size: 20px !important; border-radius: 15px 50px 15px 50px;">見積もりを取得する</a>
+                <img src="./img/cta-right.png" style="width: 200px; margin-left: 30px;" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- CTAセクション終了 -->
+
+    <!-- フッター開始 -->
+    <!-- <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">お問い合わせ</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> アメリカ、ロサンゼルス、456アベニュー</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> contact@ourcompany.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> +1 800 123 4567</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +1 800 123 4568</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">営業時間</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">月曜日 - 金曜日：</h6>
+                            <p class="text-white mb-0">09:00 AMから07:00 PMまで</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">土曜日：</h6>
+                            <p class="text-white mb-0">10:00 AMから05:00 PMまで</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">休業日：</h6>
+                            <p class="text-white mb-0">日曜日は全て休業</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">サービスを探る</h4>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> コスト見積もり</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 専門家のアドバイス</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 品質保証</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> 迅速な比較</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> カスタマーサポート</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> カスタムソリューション</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">更新情報を購読</h4>
+                        <p class="text-white mb-3">最新のニュース、更新、お得な情報を受け取るために、ニュースレターに参加してください。私たちと一緒に情報を得ましょう！</p>
+                        <div class="position-relative mx-auto rounded-pill">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="メールアドレスを入力">
+                            <button type="button"
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">購読する</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- フッター終了 -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-custom-orange btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider-container').slick({
+                dots: true,               // Show navigation dots
+                infinite: true,           // Enable infinite scrolling
+                speed: 500,               // Transition speed
+                slidesToShow: 1,          // Number of slides to show at once
+                slidesToScroll: 1,        // Number of slides to scroll at a time
+                autoplay: true,           // Enable autoplay
+                autoplaySpeed: 3000,      // Autoplay speed in ms
+                arrows: true,             // Enable navigation arrows
+                fade: true                // Enable fade transition
+            });
+        });
+    </script>
+</body>
+
+</html>
+<script>
+    
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 150,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+requestAnimationFrame();
+
+
+</script>

@@ -1,0 +1,199 @@
+.get-in-touch h1,
+.get-in-touch h2,
+.get-in-touch h3,
+.get-in-touch h4,
+.get-in-touch h5,
+.get-in-touch h6,
+.get-in-touch .h1,
+.get-in-touch .h2,
+.get-in-touch .h3,
+.get-in-touch .h4,
+.get-in-touch .h5,
+.get-in-touch .h6 {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+.get-in-touch {
+  padding: 100px 0px;
+  margin: 100px auto;
+  /* background: #FAFBFB; */
+  box-shadow: 0px 0px 20px 19px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 20px 19px rgb(0 0 0 / 12%);
+  -moz-box-shadow: 0px 0px 20px 19px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.get-in-touch a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.get-in-touch a,
+.get-in-touch a:hover {
+  text-decoration: none !important;
+}
+
+.get-in-touch img {
+  margin-top: 50px;
+  width: 300px;
+}
+
+.get-in-touch p {
+  padding: 0px 30px 0px 0px;
+}
+
+.get-in-touch .text-black {
+  color: #000;
+}
+
+.get-in-touch form {
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+}
+
+.get-in-touch .content {
+  padding: 7rem 0;
+}
+
+.get-in-touch .heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.get-in-touch .form-control {
+  border: none;
+  border-radius: 0px;
+  background: #f3f3f3;
+}
+
+.get-in-touch .form-control:active,
+.get-in-touch .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+  background: #f3f3f3;
+}
+
+.get-in-touch .col-form-label {
+  color: #000;
+}
+
+.get-in-touch .btn,
+.get-in-touch .form-control,
+.get-in-touch .custom-select {
+  height: 50px;
+}
+
+.get-in-touch .custom-select:active,
+.get-in-touch .custom-select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.get-in-touch .btn {
+  border: none;
+  border-radius: 4px !important;
+}
+
+.get-in-touch .btn.btn-primary {
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.get-in-touch .btn:hover {
+  color: #fff;
+}
+
+.get-in-touch .btn:active,
+.get-in-touch .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.get-in-touch .box {
+  padding: 40px;
+  background: #fff;
+  -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+}
+
+.get-in-touch .box h3 {
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.get-in-touch label.error {
+  font-size: 12px;
+  color: red;
+}
+
+.get-in-touch #message {
+  resize: vertical;
+}
+
+.get-in-touch #form-message-warning,
+.get-in-touch #form-message-success {
+  display: none;
+}
+
+.get-in-touch #form-message-warning {
+  color: #B90B0B;
+}
+
+.get-in-touch #form-message-success {
+  color: #55A44E;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.get-in-touch .submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+}
+
+
+.footer {
+  padding-top: 50px !important;
+}
+
+.top-banner {
+  background-image: url(../img/how-it-work-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 320px;
+
+}
+
+.top-banner h1{
+margin: 0px;
+}
+
+.top-banner .separator{
+  height: 1.5px;
+  width: 150px;
+  border-radius: 5px;
+  background: #E02454;
+  display: block;
+  margin: 20px 0px;
+}
+
+.top-banner p {
+  color: white !important;
+}
